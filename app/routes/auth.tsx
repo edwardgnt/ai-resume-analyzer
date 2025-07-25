@@ -2,12 +2,10 @@ import { use, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { usePuterStore } from "~/lib/puter";
 
-export const meta = () => {
-  return [
-    { title: "Resumind" },
-    { name: "description", content: "Log into your account." },
-  ];
-};
+export const meta = () => [
+  { title: "Resumind | Auth" },
+  { name: "description", content: "Log into your account" },
+];
 
 const auth = () => {
   const { isLoading, auth } = usePuterStore();
